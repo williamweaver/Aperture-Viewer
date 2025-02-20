@@ -1081,6 +1081,7 @@ public:
     static U32 RenderSSAOMaxScale;
     static F32 RenderSSAOFactor;
     static LLVector3 RenderSSAOEffect;
+	static F32 RenderSSAOSampleCount; // <FS:WWeaver> New setting for SSAO sample count
     static F32 RenderShadowOffsetError;
     static F32 RenderShadowBiasError;
     static F32 RenderShadowOffset;

@@ -1002,7 +1002,7 @@
 			 top_pad="1"
 			 left="3"
 			 right="-3"
-			 height="205"
+			 height="185"
 			 border_visible="true"
 			 background_visible="true">
 			 
@@ -1299,7 +1299,7 @@
 					 parameter="RenderShadowBlurDistFactor"/>
 				</button>
 
-				<text
+				<!--text
 				 name="T_FOV_Cutoff"
 				 follows="top|left"
 				 layout="topleft"
@@ -1346,7 +1346,7 @@
 					<button.commit_callback
 					 function="ResetControl"
 					 parameter="RenderShadowFOVCutoff"/>
-				</button>
+				</button-->
 
 				<text
 				 name="T_Spot_Cutoff"
@@ -1510,15 +1510,64 @@
 			 top_pad="1"
 			 left="3"
 			 right="-3"
-			 height="161"
+			 height="181"
 			 border_visible="true"
 			 background_visible="true">
+				<text
+				 name="T_Samples"
+				 follows="top|left"
+				 layout="topleft"
+				 left="5"
+				 top_pad="10"
+				 tool_tip="Controls the number of samples used for Screen Space Ambient Occlusion (SSAO). Higher values improve quality but reduce performance."
+				 width="70">
+					Samples
+				</text>
+				<slider_bar
+				 name="SB_Samples"
+				 control_name="RenderSSAOSampleCount"
+				 follows="left|right"
+				 height="16"
+				 increment="1"
+				 layout="topleft"
+				 left_pad="0"
+				 min_val="0"
+				 max_val="1024"
+				 top_delta="-2"
+				 width="127"/>
+				<spinner
+				 name="S_Samples"
+				 control_name="RenderSSAOSampleCount"
+				 top_delta="-3"
+				 label_width="0"
+				 left_pad="0"
+				 decimal_digits="0"
+				 follows="top|right"
+				 max_val="1024"
+				 min_val="-0"
+				 width="53"
+				 increment="1"/>
+				<button
+				 follows="left|top"
+				 name="Reset_Samples"
+				 height="22"
+				 label="D"
+				 layout="topleft"
+				 left_pad="0"
+				 top_delta="0"
+				 width="20"
+				 tool_tip="Reset to the default value.">
+					<button.commit_callback
+					 function="ResetControl"
+					 parameter="RenderSSAOSampleCount"/>
+				</button>
+
 				<text
 				 name="T_Scale"
 				 follows="top|left"
 				 layout="topleft"
 				 left="5"
-				 top_pad="10"
+				 top_pad="5"
 				 tool_tip="Controls the size of the sampling area used for Ambient Occlusion. Larger values increase shadow accuracy and detail but may impact performance. Best used with shadow blur adjustments to achieve softer shading effects."
 				 width="70">
 					Scale
@@ -1528,11 +1577,11 @@
 				 control_name="RenderSSAOScale"
 				 follows="left|right"
 				 height="16"
-				 increment="1"
+				 increment=".01"
 				 layout="topleft"
 				 left_pad="0"
 				 min_val="0"
-				 max_val="10000"
+				 max_val="1"
 				 top_delta="-2"
 				 width="127"/>
 				<spinner
@@ -1541,7 +1590,7 @@
 				 top_delta="-3"
 				 label_width="0"
 				 left_pad="0"
-				 decimal_digits="0"
+				 decimal_digits="2"
 				 follows="top|right"
 				 max_val="10000000"
 				 min_val="-1000000"
@@ -1581,7 +1630,7 @@
 				 layout="topleft"
 				 left_pad="0"
 				 min_val="0"
-				 max_val="10000"
+				 max_val="5"
 				 top_delta="-2"
 				 width="127"/>
 				<spinner
@@ -1676,12 +1725,12 @@
 				 control_name="RenderSSAOIrradianceMax"
 				 follows="left|right"
 				 height="16"
-				 increment="1"
+				 increment=".01"
 				 decimal_digits="0"
 				 layout="topleft"
 				 left_pad="0"
 				 min_val="0"
-				 max_val="10000"
+				 max_val="1"
 				 top_delta="-2"
 				 width="127"/>
 				<spinner
@@ -1691,7 +1740,7 @@
 				 top_delta="-3"
 				 label_width="0"
 				 left_pad="0"
-				 decimal_digits="0"
+				 decimal_digits="2"
 				 follows="top|right"
 				 max_val="10000000"
 				 min_val="0"
@@ -1730,11 +1779,11 @@
 				 control_name="RenderSSAOIrradianceScale"
 				 follows="left|right"
 				 height="16"
-				 increment="1"
+				 increment=".01"
 				 layout="topleft"
 				 left_pad="0"
 				 min_val="0"
-				 max_val="100"
+				 max_val="1"
 				 top_delta="-2"
 				 width="127"/>
 				<spinner
@@ -1744,7 +1793,7 @@
 				 top_delta="-3"
 				 label_width="0"
 				 left_pad="0"
-				 decimal_digits="1"
+				 decimal_digits="2"
 				 follows="top|right"
 				 max_val="100000"
 				 min_val="0"
