@@ -1836,6 +1836,27 @@ if (LINUX)
     endif()
     # </FS:ND>
 
+    // <FS:WW> Custom Icon Change - Start (Phototools Channel Icon)
+    // Added condition to use 'phototools' icon directory for --chan phototools
+    // ------------------------------------------------------------------
+    // Original code block (preserved in comments):
+    // # Replace the icons with the appropriate ones for the channel
+    // # ('test' is the default)
+    // set(ICON_PATH "private")
+    // string(TOLOWER ${VIEWER_CHANNEL} channel_lower)
+    // if(channel_lower MATCHES "release")
+    //     set(ICON_PATH "release")
+    // elseif(channel_lower MATCHES "beta")
+    //     set(ICON_PATH "beta")
+    // elseif(channel_lower MATCHES "project")
+    //     set(ICON_PATH "project")
+    // endif()
+    //
+    // if (OPENSIM)
+    //     set(ICON_PATH "${ICON_PATH}-os")
+    // endif (OPENSIM)
+
+    // <FS:WW> Modified code block:
     # Replace the icons with the appropriate ones for the channel
     # ('test' is the default)
     set(ICON_PATH "private")
@@ -1846,11 +1867,18 @@ if (LINUX)
         set(ICON_PATH "beta")
     elseif(channel_lower MATCHES "project")
         set(ICON_PATH "project")
+    // --- ADDED THIS ELSEIF CONDITION <FS:WW/> ---
+    elseif(channel_lower MATCHES "phototools")
+        set(ICON_PATH "phototools")
+    // --- END ADDED SECTION <FS:WW/> ---
     endif()
 
     if (OPENSIM)
         set(ICON_PATH "${ICON_PATH}-os")
     endif (OPENSIM)
+    // ------------------------------------------------------------------
+    // Custom Icon Change - End
+    // </FS:WW>
 
     message(STATUS "Copying icons for ${ICON_PATH}")
     execute_process(
