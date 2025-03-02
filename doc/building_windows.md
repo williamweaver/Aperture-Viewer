@@ -162,7 +162,22 @@ FMOD_VERSION="20102"
 FMOD_VERSION_PRETTY="2.01.02"
 ```
 
+> [!WARNING]
+> **Windows Line Endings Issue in `build-cmd.sh`**
+>
+> The `build-cmd.sh` script within the `3p-fmodstudio` directory *must* have Linux/Unix line endings (LF).  On Windows, text editors and Git can sometimes introduce Windows line endings (CRLF).  If `build-cmd.sh` has CRLF line endings, it can cause build failures when executed in Cygwin/bash.
+>
+> **To check and fix this:**
+>
+> 1. **Install `dos2unix` in Cygwin:** If you don't have it already, run the Cygwin installer again (setup-x86_64.exe) and in the "Select Packages" screen, search for `dos2unix` in the "Util" category and install it.
+> 2. **Open a Cygwin terminal.**
+> 3. **Navigate to the `3p-fmodstudio` directory:** `cd /cygdrive/c/firestorm/3p-fmodstudio` (adjust `/cygdrive/c/firestorm` if your `firestorm` directory is elsewhere).
+> 4. **Run the `dos2unix` command:** `dos2unix build-cmd.sh`
+>
+> This will convert the line endings of `build-cmd.sh` to LF, ensuring it runs correctly in Cygwin.
+
 Continue on the Windows command line:
+
 
 ```
 c:
