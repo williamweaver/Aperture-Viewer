@@ -1,10 +1,13 @@
 <p align="left">
-  <img align="left" width="150" height="150" src="https://raw.githubusercontent.com/williamweaver/Aperture-Viewer/refs/heads/master/doc/aperture_logo.png" alt="Aperture Viewer - Advanced Photography and Videomaking Viewer">
+  <img align="left" width="150" height="150" src="https://github.com/williamweaver/Aperture-Viewer/blob/dev/doc/Aperture_256.png" alt="Aperture Viewer - Advanced Photography and Videomaking Viewer">
 </p>
 
 # Aperture Viewer: Development Fork for Pioneering Visual Experimentation (Based on Firestorm)
 
 **Independent Development - Test Releases, Learning Hub**
+
+> [!NOTE]
+> This project and its GitHub serve as a learning hub for advanced visual techniques and user feedback, in addition to being a testbed for new features.
 
 Aperture Viewer is an independent fork of Firestorm by William Weaver, created for **novel visual feature exploration** in Second Life and OpenSim.  Not an official Firestorm project and not intended to compete, Aperture Viewer is a personal testbed, built on Firestorm, for developing and testing features with user feedback.  Aperture Viewer and its GitHub also function as a learning hub, to:
 
@@ -18,13 +21,14 @@ Aperture Viewer, focused on visual exploration, learning, and user feedback, is 
 
 For those unfamiliar with William Weaver's virtual photography and videomaking work, see examples on his [YouTube channel](https://www.youtube.com/@colorscompletely/featured) and in these online photobooks:
 
-[none of this is real](https://drive.google.com/file/d/1538c17kHuoY-0jg0_YIwBcLOPsf5-diO/view)
+[![none of this is real - photobook - Click to Open PDF](doc/none_of_this_is_real_cover.png)](doc/none_of_this_is_real_Optimized.pdf)
 
-[we all have this madness](https://drive.google.com/file/d/1L5yp10VYebDS9Nai9Ti0GHtGMeuac0Yz/view)
+[![we all have this madness - photobook - Click to Open PDF](doc/we_all_have_this_madness_cover.png)](doc/we_all_have_this_madness.pdf)
+
 
 <br/>
 
-> [!NOTE]
+> [!IMPORTANT]
 >**Important Disclaimer:** **Aperture Viewer is not a substitute for Firestorm Viewer for general use and is not supported by Linden Lab or the Firestorm Viewer Project.** This is an independent, community-developed *test* project based on the open-source Firestorm Viewer code, intended for visual experimentation, user feedback, and as a learning resource.
 >*   **Open Source Based on Firestorm:** Like Firestorm, this viewer is derived from the official [Second Life](https://github.com/secondlife/viewer) client. The client codebase has been open source since 2007 and is available under the LGPL license. This project continues to be open and welcomes contributions within its focused scope.
 >*   **Alpha Software:** Aperture Viewer is currently in **Alpha development**. Expect instability, bugs, and incomplete features. It is provided for **testing and early access purposes only.**
@@ -55,11 +59,14 @@ Aperture Viewer is under **active development** and will continue to serve as a 
 
 Explore the Aperture Viewer Wiki for in-depth documentation on all features, including Phototools.  This comprehensive resource provides guides for photomaking and videography, drawing on decades of experience and incorporating YouTube video tutorials.
 
+> [!TIP]
+> **New to Aperture Viewer?** Start with the **Getting Started** section in the Wiki Navigation below for download, installation, and basic usage information.
+
 **Wiki Navigation:**
 
 *   **Getting Started:**  [Download & Installation](https://github.com/williamweaver/Aperture-Viewer/wiki/Download-&-Installation), [Getting Started](https://github.com/williamweaver/Aperture-Viewer/wiki/Getting-Started), [Troubleshooting & FAQ](https://github.com/williamweaver/Aperture-Viewer/wiki/Troubleshooting)
 *   **About Aperture Viewer:** [History & Development](https://github.com/williamweaver/Aperture-Viewer/wiki/History-and-Development), [Change Log](https://github.com/williamweaver/Aperture-Viewer/wiki/Change-Log), [Credits & Acknowledgements](https://github.com/williamweaver/Aperture-Viewer/wiki/Credits-&-Acknowledgements), [Contact & Support](https://github.com/williamweaver/Aperture-Viewer/wiki/Contact-&-Support)
-*   **Features & Guides:** [Viewer Features](https://github.com/williamweaver/Aperture-Viewer/wiki/Viewer-Features), [Phototools Guide](https://github.com/williamweaver/Aperture-Viewer/wiki/Phototools-Guide), [Environment Presets Guide](https://github.com/williamweaver/Aperture-Viewer/wiki/Environment-Presets-Guide), [Camera Tools Guide](https://github.com/williamweaver/Aperture-Viewer/wiki/Cameratools-Floater) **... and more!** (See Wiki Table of Contents)
+*   **Features & Guides:** [Viewer Features](https://github.com/williamweaver/Aperture-Viewer/wiki/Viewer-Features), [Phototools Guide](https://github.com/williamweaver/Aperture-Viewer/wiki/Phototools-Guide), [Environment Presets Guide](https://github.com/williamweaver/Aperture-Viewer/wiki/Environment-Presets-Tutorial), [Camera Tools Guide](https://github.com/williamweaver/Aperture-Viewer/wiki/Cameratools-Floater), **[How-To Guides](https://github.com/williamweaver/Aperture-Viewer/wiki/How%E2%80%90To-Guides)** **... and more!** (See Wiki Table of Contents)
 
 **Contribute to Aperture Viewer:**  The Wiki also provides information on how you can contribute to the project through code, feedback, and feature suggestions.  See the [Wiki Home](https://github.com/williamweaver/Aperture-Viewer/wiki/Home) and relevant pages for details.
 
@@ -80,7 +87,11 @@ Aperture Viewer is maintained by William Weaver and is an independent project fo
 
 ## Download (Windows AVX Alpha Releases)
 
-Currently, pre-built alpha versions of **Aperture Viewer** are available for **Windows (AVX instruction set)** only. These releases are for testing and early access and should be considered **Alpha quality** unless otherwise stated.
+> [!WARNING]
+> **Windows AVX Alpha Releases ONLY:**  Currently, pre-built alpha versions of Aperture Viewer are **only available for Windows systems with AVX instruction set compatible processors.**  Releases for other platforms are not yet available.
+
+> [!IMPORTANT]
+> **Alpha Quality - For Testing:** These releases are for **testing and early access** and should be considered **Alpha quality** unless otherwise stated. Expect instability and bugs.
 
 [Releases](https://github.com/williamweaver/Aperture-Viewer/releases)
 
@@ -94,8 +105,8 @@ For now, build instructions are largely the same as for Firestorm. Please refer 
 - [Mac](doc/building_macos.md)
 - [Linux](doc/building_linux.md)
 
-> [!NOTE]
-> As with Firestorm self-compiles, support for compiling this viewer or issues from self-compiled versions is limited. The [Firestorm Self Compilers](https://tinyurl.com/firestorm-self-compilers) group may be helpful for general build questions.
+> [!CAUTION]
+> **Limited Support for Self-Compiles:** As with Firestorm self-compiles, official support for compiling Aperture Viewer yourself or for issues arising from self-compiled versions is limited.  Consult the [Firestorm Self Compilers](https://tinyurl.com/firestorm-self-compilers) group for general build questions.
 
 ---
 
