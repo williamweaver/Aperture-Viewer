@@ -49,14 +49,16 @@
       width="970"
       min_width="970"
       height="152">
+<!-- <FS:WW> Rebranding login logo - Change image_name from firestorm to aperture -->
+<!-- image_name="login_fs_logo" -->
   <icon
     height="125"
     width="125"
-    image_name="login_fs_logo"
-    left="0"
+    image_name="login_ap_logo" 
+	left="0"
     top="10"
     name="sl_logo_small" />
-
+<!-- </FS:WW> -->
     <layout_stack
       animate="false"
       clip="false"

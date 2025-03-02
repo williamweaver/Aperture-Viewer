@@ -84,8 +84,12 @@ void GrowlNotifierWin::registerApplication(const std::string& application, const
         strcpy(string, it->c_str());
         arr[i] = string;
     }
+	// <FS:WW> Rebranding icons from Firestorm to Aperture - Growl icon filename
+	//     mGrowlImpl = new Growl (GROWL_TCP, NULL, application.c_str(), (const char **const)arr, static_cast<int>(notificationTypes.size()),
+	//         std::string(gDirUtilp->getDefaultSkinDir() + gDirUtilp->getDirDelimiter() + "textures" + gDirUtilp->getDirDelimiter() + "firestorm_icon.png").c_str());
     mGrowlImpl = new Growl (GROWL_TCP, NULL, application.c_str(), (const char **const)arr, static_cast<int>(notificationTypes.size()),
-        std::string(gDirUtilp->getDefaultSkinDir() + gDirUtilp->getDirDelimiter() + "textures" + gDirUtilp->getDirDelimiter() + "firestorm_icon.png").c_str());
+        std::string(gDirUtilp->getDefaultSkinDir() + gDirUtilp->getDirDelimiter() + "textures" + gDirUtilp->getDirDelimiter() + "aperture_icon.png").c_str());
+	// </FS:WW>
 
     for (i = 0; i < (S32)notificationTypes.size(); ++i)
     {

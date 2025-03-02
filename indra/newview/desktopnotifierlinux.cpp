@@ -213,8 +213,12 @@ const gint NOTIFICATION_TIMEOUT_MS = 5000;
 
 std::string Find_BMP_Resource( bool a_bSmallIcon )
 {
-    const std::string ICON_128( "firestorm_icon128.png" );
-    const std::string ICON_512( "firestorm_icon.png" );
+	// <FS:WW> Rebranding icons from Firestorm to Aperture - icon filenames in CPP
+	//     const std::string ICON_128( "firestorm_icon128.png" );
+	//     const std::string ICON_512( "firestorm_icon.png" );
+    const std::string ICON_128( "aperture_icon128.png" );
+    const std::string ICON_512( "aperture_icon.png" );
+	// </FS:WW>
 
     std::string strRet( gDirUtilp->getAppRODataDir() );
     strRet += gDirUtilp->getDirDelimiter();

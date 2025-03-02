@@ -1404,7 +1404,10 @@ void LLPanelProfileSecondLife::fillAccountStatus(const LLAvatarData* avatar_data
         std::string text;
         if (flags & (FSData::DEVELOPER | FSData::SUPPORT | FSData::QA | FSData::GATEWAY))
         {
-            args["[FIRESTORM]"] = LLTrans::getString("APP_NAME");
+// <FS:WW> Aperture Icon - rebranding - Use "Firestorm" string for [FIRESTORM] tag instead of APP_NAME
+//             args["[FIRESTORM]"] = LLTrans::getString("APP_NAME");
+            args["[FIRESTORM]"] = LLTrans::getString("Firestorm");
+// </FS:WW>
         }
 
         if (flags & FSData::DEVELOPER)

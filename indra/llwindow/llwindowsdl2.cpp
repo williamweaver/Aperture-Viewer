@@ -814,7 +814,7 @@ bool LLWindowSDL::createContext(int x, int y, int width, int height, int bits, b
 
     // Set the application icon.
     SDL_Surface *bmpsurface;
-    bmpsurface = Load_BMP_Resource("firestorm_icon.BMP");
+    bmpsurface = Load_BMP_Resource("aperture_icon.BMP");
     if (bmpsurface)
     {
         SDL_SetWindowIcon(mWindow, bmpsurface);

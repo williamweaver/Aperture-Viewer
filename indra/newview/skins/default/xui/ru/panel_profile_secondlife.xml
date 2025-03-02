@@ -9,6 +9,16 @@
 	<string name="BadgeLinden" value="Сотрудник лаборатории Линден" />
 	<string name="BadgePremiumLifetime" value="Премиум пожизненно" />
 	<string name="BadgePremiumPlusLifetime" value="Премиум Плюс пожизненно" />
+<!-- <FS:WW> Rebranding for Aperture Viewer - Hardcode "Firestorm" in BadgeTeam string -->
+<!--
+    <string
+     name="BadgeTeam"
+     value="Член [APP_NAME]" />
+-->
+    <string
+     name="BadgeTeam"
+     value="Член Firestorm" />
+<!-- </FS:WW> -->
 	<string name="BadgeTeam" value="Член [APP_NAME]" />
 	<string name="no_partner_text" value="Никто"/>
 	<string name="no_group_text" value="Никто"/>

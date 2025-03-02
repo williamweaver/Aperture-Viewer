@@ -150,7 +150,9 @@ void gridDownloadComplete( LLSD const &aData, LLGridManager* mOwner, GridEntry* 
     }
 }
 
-const char* DEFAULT_LOGIN_PAGE = "https://phoenixviewer.com/app/loginV3/";
+// <FS:WW> Rebranding - Changed Default Login Page to Aperture Viewer YouTube Video
+const char* DEFAULT_LOGIN_PAGE = "https://www.youtube.com/embed/6TPQiVsFWCM?autoplay=1&loop=1&playlist=6TPQiVsFWCM&controls=0&showinfo=0&modestbranding=1&iv_load_policy=3&disablekb=1&rel=0"; // Aperture Viewer UI-less YouTube Login Page (No forced language)
+// </FS:WW>
 
 const char* SYSTEM_GRID_SLURL_BASE = "secondlife://%s/secondlife/";
 const char* MAIN_GRID_SLURL_BASE = "http://maps.secondlife.com/secondlife/";
@@ -1182,7 +1184,11 @@ std::string LLGridManager::getLoginPage()
         return cmd_line_login_page;
     }
 
-    return mGridList[mGrid][GRID_LOGIN_PAGE_VALUE];
+    // <FS:WW> Rebranding - Forcefully return Aperture Viewer Default Login Page (YouTube)
+    // return mGridList[mGrid][GRID_LOGIN_PAGE_VALUE]; // Original line - get from grid config
+    std::string response(DEFAULT_LOGIN_PAGE); // Forcefully return DEFAULT_LOGIN_PAGE
+    return response;
+    // </FS:WW>
 }
 
 std::string LLGridManager::getWebProfileURL(const std::string& grid)

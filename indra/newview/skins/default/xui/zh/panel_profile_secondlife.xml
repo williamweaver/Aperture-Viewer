@@ -15,6 +15,16 @@
 	<string name="BadgeLinden" value="Linden Lab 員工" />
 	<string name="BadgePremiumLifetime" value="Premium 終身會員" />
 	<string name="BadgePremiumPlusLifetime" value="Premium Plus 終身會員" />
+<!-- <FS:WW> Rebranding for Aperture Viewer - Hardcode "Firestorm" in BadgeTeam string -->
+<!--
+    <string
+     name="BadgeTeam"
+     value="[APP_NAME] 會員" />
+-->
+    <string
+     name="BadgeTeam"
+     value="Firestorm 會員" />
+<!-- </FS:WW> -->
 	<string name="BadgeTeam" value="[APP_NAME] 會員" />
 	<string name="no_partner_text" value="無" />
 	<string name="no_group_text" value="無" />

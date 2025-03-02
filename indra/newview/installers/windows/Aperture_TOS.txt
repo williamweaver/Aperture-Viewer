@@ -1,0 +1,18 @@
+Important: Agreement to Second Life Terms of Service Required
+
+By using Aperture Viewer to access Second Life or OpenSim virtual worlds, you agree to be bound by and comply with the Second Life Terms of Service as set forth by Linden Research, Inc. (Linden Lab), the creators of Second Life.
+
+Please carefully review the official Second Life Terms of Service at the following link:
+
+https://lindenlab.com/legal/second-life-terms-and-conditions
+
+Key Points to Understand:
+
+    Linden Lab Terms Govern Second Life Usage: The Second Life Terms of Service are the legal agreement between you and Linden Lab regarding your use of the Second Life service, regardless of which viewer you use to access Second Life.
+    Aperture Viewer is a Third-Party Viewer: Aperture Viewer is a separate, third-party software application that allows you to connect to Second Life. While we strive for compatibility and a positive user experience, your use of Second Life through Aperture Viewer is ultimately governed by Linden Lab's Terms of Service and other policies.
+    Your Responsibility to Comply: It is your responsibility to read, understand, and comply with the Second Life Terms of Service when using Aperture Viewer to access Second Life.
+    Policy Updates: Linden Lab may update their Terms of Service from time to time. Please check the official Second Life Terms of Service link above for the most current version.
+
+Aperture Viewer Policy:
+
+In addition to the Second Life Terms of Service, please also review the Aperture Viewer Privacy Policy and other documentation on this Wiki to understand the policies and practices specific to Aperture Viewer itself.

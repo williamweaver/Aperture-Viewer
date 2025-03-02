@@ -89,8 +89,8 @@ Name ${INSTNAME}
 # <FS:Ansariel> FIRE-24335: Use different icon for OpenSim version
 #!define MUI_ICON   "%%SOURCE%%\installers\windows\firestorm_icon_os.ico"
 #!define MUI_UNICON "%%SOURCE%%\installers\windows\firestorm_icon_os.ico"
-!define MUI_ICON   "%%SOURCE%%\installers\windows\firestorm_icon${ICON_SUFFIX}.ico"
-!define MUI_UNICON "%%SOURCE%%\installers\windows\firestorm_icon${ICON_SUFFIX}.ico"
+!define MUI_ICON   "%%SOURCE%%\installers\windows\aperture_icon${ICON_SUFFIX}.ico"
+!define MUI_UNICON "%%SOURCE%%\installers\windows\aperture_icon${ICON_SUFFIX}.ico"
 # </FS:Ansariel>
 
 BrandingText " "						# Bottom of window text

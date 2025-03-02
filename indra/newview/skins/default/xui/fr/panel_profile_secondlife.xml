@@ -15,7 +15,16 @@
 	<string name="BadgeLinden" value="Employé(e) de Linden Lab" />
 	<string name="BadgePremiumLifetime" value="Premium à vie" />
 	<string name="BadgePremiumPlusLifetime" value="Premium Plus à vie" />
-	<string name="BadgeTeam" value="membre de [APP_NAME]" />
+<!-- <FS:WW> Rebranding for Aperture Viewer - Hardcode "Firestorm" in BadgeTeam string -->
+<!--
+    <string
+     name="BadgeTeam"
+     value="membre de [APP_NAME]" />
+-->
+    <string
+     name="BadgeTeam"
+     value="membre de Firestorm" />
+<!-- </FS:WW> -->
 	<string name="payment_update_link_url">
 		http://www.secondlife.com/account/billing.php?lang=fr
 	</string>

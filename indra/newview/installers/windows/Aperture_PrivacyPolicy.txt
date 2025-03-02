@@ -1,0 +1,92 @@
+
+
+Privacy Policy for Aperture Viewer
+
+Effective Date: March 1, 2025
+
+IMPORTANT NOTICE – PLEASE READ CAREFULLY
+
+This Privacy Policy ("Policy") governs your use of Aperture Viewer (the "Software") provided by the Aperture Viewer Development Team ("we," "us," or "our"). By downloading, installing, or using the Software, you agree to be bound by the terms set forth herein. Interactive Consent: When you access the Software via our official installer an interactive mechanism (for example, an "I Agree" checkbox) may be provided to allow you to explicitly indicate your acceptance of these terms. In cases where such a mechanism is not displayed for any reason your continued use of the Software will be deemed to signify your informed acceptance of these terms. If you do not agree with any part of this Policy, do not download, install, or use the Software.
+
+This Policy is for informational purposes only and does not constitute legal advice. We strongly recommend that you consult qualified legal counsel regarding your rights and obligations.
+
+1. Introduction and Scope
+
+    Purpose and Nature: Aperture Viewer is a third‑party client application for accessing virtual worlds (e.g., Second Life) and is developed as a fork of the open‑source Firestorm Viewer project. This Policy outlines our data handling practices and, to the maximum extent permitted by applicable law, limits our liability with respect to the Software.
+
+    Acceptance of Terms: Your act of downloading, installing, or using the Software constitutes your agreement to be bound by this Policy. If you do not agree with any part of this Policy, you must not use the Software.
+
+    Definition – “Standard and Intended Operation”: "Standard and intended operation" means using the Software solely to connect to and interact with virtual world grids via its documented features, without modifications that might trigger additional or unforeseen data collection.
+
+2. Data Collection Practices
+
+    No Intentional Data Collection: During standard and intended operation, we do not intentionally collect, process, or transmit personal or usage data, including (but not limited to):
+        Usage Data: Activity patterns, feature utilization, or session durations.
+        Personal Information: Usernames, passwords (entered only on external platforms), email addresses, IP addresses, geographic locations, or other personally identifiable information.
+        Communications: Text chat, voice communications, or other in‑world communications.
+        System Information: Details about hardware, software, or network configurations.
+        Crash Logs and Error Reports: These are not automatically transmitted; any future crash reporting feature will require your explicit opt‑in via a clear consent mechanism.
+
+    Unintentional Data Collection: Due to the inherent complexity of software systems, inadvertent data collection may occur. To the extent permitted by applicable law, we disclaim liability for such unintentional collection; however, nothing herein limits our liability for matters (such as gross negligence or willful misconduct) that cannot be waived under law.
+
+3. Open Source Transparency
+
+    Public Code Access: The Software is based on open‑source code available for review at: https://github.com/williamweaver/Aperture-Viewer.git This code is provided solely for transparency and does not constitute a warranty or guarantee regarding the absence of data collection. Any conclusions drawn from a review are solely your responsibility.
+
+4. Client‑Side Operation and Infrastructure
+
+    Client‑Side Design: The Software is designed to operate exclusively on the client side. We do not operate servers or maintain communication channels for collecting user data.
+
+    Inadvertent Communications: Although the Software is engineered to avoid unintended data transmissions, any such occurrences are unintentional, and our liability for these, to the maximum extent permitted by law, is strictly limited.
+
+5. External Services and User Responsibility
+
+    Access to Virtual Worlds: The Software facilitates access to external virtual worlds (e.g., Second Life) governed by their own privacy policies and terms of service. We do not control, and are not responsible for, the data practices or security measures of these external entities.
+
+    User Due Diligence: It is your responsibility to review and understand the privacy policies and data practices of any external services you access through the Software.
+
+6. Data Security and Limitation of Liability
+
+    Security Efforts: We implement "reasonable security measures"—including industry‑standard security practices, regular security assessments, and secure coding practices—to protect the Software and our development processes. While this language is intentionally flexible to adapt to evolving threats, it demonstrates our commitment to security without creating fixed obligations that may become outdated.
+
+    Limitation of Liability: Subject to applicable law, our aggregate liability for any claims arising out of or relating to the Software—including claims related to security breaches or unauthorized access—is limited to the maximum extent permitted by law. Nothing in this Policy shall limit or waive any rights or obligations that are non‑waivable under applicable law, including any mandatory statutory rights you may have.
+
+7. Modifications and Redistribution
+
+    Modifications: This Policy applies to the Software in its original form. If you modify or redistribute the Software, you do so at your own risk. You are solely responsible for ensuring that any modified version complies with all applicable laws and for providing appropriate disclosures and privacy terms to your end users.
+
+    Liability for Modified Versions: We expressly disclaim any liability arising from modifications or redistribution of the Software. Any harm resulting from such modifications is the sole responsibility of the modifying or redistributing party.
+
+8. Dispute Resolution
+
+    Governing Law: This Policy is governed by and construed in accordance with the laws of the State of Delaware, USA, without regard to conflict-of-law principles.
+
+    Pre-Arbitration Negotiations: Before initiating arbitration, the parties must engage in good-faith negotiations to attempt resolution of any dispute. Upon written notice of a dispute:
+        Each party must designate a representative with decision-making authority.
+        The recipient of the dispute notice must respond within 15 days.
+
+    These negotiations are intended as a non-binding, preliminary step and do not preclude either party from seeking interim relief if immediate action is required.
+
+    Interim Measures: If immediate and irreparable harm is reasonably anticipated, either party may seek injunctive or equitable relief only from a court of competent jurisdiction in Delaware. Any such court action is strictly limited to securing temporary relief pending the resolution of the dispute through arbitration.
+
+    Arbitration: If a dispute is not resolved through negotiations, it must be resolved through binding arbitration administered by the American Arbitration Association (AAA) under its applicable Commercial Arbitration Rules. The arbitration will take place in Wilmington, Delaware, unless the parties mutually agree otherwise.
+
+9. Consent and Acknowledgment
+
+    Assumption of Risk: By using the Software, you acknowledge and accept the inherent risks associated with third‑party software and online services, and you assume full responsibility for your use of the Software and any consequences thereof.
+
+10. International Considerations
+
+While this Policy is governed by Delaware law, international users should note that local laws may afford you additional rights or impose further obligations regarding data protection and privacy. This Policy is not intended to imply that we assume responsibility for compliance with regulations such as the GDPR. Instead, international users are advised to review their local legal requirements to ensure that their use of the Software complies with all applicable laws.
+
+11. Policy Modifications and Updates
+
+We reserve the right to modify or update this Policy at any time. Any changes will be effective immediately upon posting on our website or within the Software. Your continued use of the Software following the posting of changes constitutes your acceptance of the modified Policy. We encourage you to periodically review this Policy to remain informed about our practices.
+
+12. Contact Information
+
+If you have any questions or concerns regarding this Policy, please contact us at: Aperture.Viewer@gmail.com
+
+13. Disclaimer
+
+This Privacy Policy is provided for informational purposes only and does not constitute legal advice. While we have made every effort to draft a balanced Policy that protects the Aperture Viewer Development Team and informs users of their rights and obligations, we make no guarantee that all provisions will be enforceable in every jurisdiction. Any reliance on this Policy is at your own risk. Please consult with a qualified legal professional for advice tailored to your specific circumstances.

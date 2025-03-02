@@ -14,7 +14,16 @@
 	<string name="BadgeLinden" value="Dipendente Linden Lab" />
 	<string name="BadgePremiumLifetime" value="Membro a vita Premium" />
 	<string name="BadgePremiumPlusLifetime" value="Membro a vita Premium Plus" />
-	<string name="BadgeTeam" value="Membro [APP_NAME] Team" />
+<!-- <FS:WW> Rebranding for Aperture Viewer - Hardcode "Firestorm" in BadgeTeam string -->
+<!--
+    <string
+     name="BadgeTeam"
+     value="Membro [APP_NAME] Team"" />
+-->
+    <string
+     name="BadgeTeam"
+     value="Membro Firestorm team" />
+<!-- </FS:WW> -->
 	<string name="no_partner_text" value="Nessuno" />
 	<string name="no_group_text" value="Nessuno" />
 	<string name="FSDev" value="Sviluppatore "/>

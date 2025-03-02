@@ -51,9 +51,16 @@
     <string
      name="BadgePremiumPlusLifetime"
      value="Premium Plus lifetime" />
+<!-- <FS:WW> Rebranding for Aperture Viewer - Hardcode "Firestorm" in BadgeTeam string -->
+<!--
     <string
      name="BadgeTeam"
      value="[APP_NAME] member" />
+-->
+    <string
+     name="BadgeTeam"
+     value="Firestorm member" />
+<!-- </FS:WW> -->
     <string
      name="payment_update_link_url"
     >

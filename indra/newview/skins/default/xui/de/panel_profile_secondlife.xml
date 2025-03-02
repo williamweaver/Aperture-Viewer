@@ -21,8 +21,16 @@
 		value="Premium Lebenszeit" />
 	<string name="BadgePremiumPlusLifetime"
 		value="Premium Plus Lebenszeit" />
-	<string name="BadgeTeam"
-		value="[APP_NAME]-Mitglied" />
+<!-- <FS:WW> Rebranding for Aperture Viewer - Hardcode "Firestorm" in BadgeTeam string -->
+<!--
+    <string
+     name="BadgeTeam"
+     value="[APP_NAME]-Mitglied" />
+-->
+    <string
+     name="BadgeTeam"
+     value="Firestorm-Mitglied" />
+<!-- </FS:WW> -->
 	<string name="payment_update_link_url">
 		http://www.secondlife.com/account/billing.php?lang=de
 	</string>
