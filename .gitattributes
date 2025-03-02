@@ -16,6 +16,9 @@ indra/tools/vstool/* -text
 *.tga binary
 *.tif binary
 
+# PDF files
+*.pdf -text
+
 # Viewer resources
 *.db2 binary
 *.llm binary
