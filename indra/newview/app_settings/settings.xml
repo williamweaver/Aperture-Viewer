@@ -10951,7 +10951,7 @@ Change of this parameter will affect the layout of buttons in notification toast
     <key>Comment</key>             
     <string>Controls the number of samples used for Screen Space Ambient Occlusion (SSAO). Higher values improve quality but reduce performance.</string> 
     <key>Persist</key>           
-    <integer>1</integer>         
+    <integer>0</integer>         
     <key>Type</key>             
     <string>F32</string>        
     <key>Value</key>               
