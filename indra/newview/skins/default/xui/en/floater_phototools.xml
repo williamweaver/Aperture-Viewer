@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<!-- FS:WW - Hunk 1: Increased height of <floater> tag from 540 to 560. -->
+<!-- FS:WW: Increased height of <floater> tag from 540 to 560. -->
 <floater
  can_resize="false"
  can_close="true"
@@ -14,7 +14,7 @@
  single_instance="true"
  title="Phototools"
  width="288">
-<!-- FS:WW - Hunk 2: Increased height of <tab_container> tag from 540 to 560 to match floater height. -->
+<!-- FS:WW: Increased height of <tab_container> tag from 540 to 560 to match floater height. -->
 	<tab_container
 	 follows="all"
 	 halign="center"
@@ -758,7 +758,7 @@
 					 function="Quickprefs.ShaderChanged"/>
 				</combo_box>
 			</panel>
-			<!-- FS:WW - Hunk 3: Increased height of P_R_Res_3 panel from 46 to 66 to accommodate content. -->
+			<!-- FS:WW: Increased height of P_R_Res_3 panel from 46 to 66 to accommodate content. -->
 			<panel
 			 name="P_R_Res_3"
 			 follows="top|left"
@@ -780,7 +780,7 @@
 				 width="70">
 					Reflect. Dist.
 				</text>
-				<!-- FS:WW - Hunk 4: Changed min_val of SB_Reflection_Distance slider from 0 to 1 to prevent potential issues with 0 value. -->
+				<!-- FS:WW: Changed min_val of SB_Reflection_Distance slider from 0 to 1 to prevent potential issues with 0 value. -->
 				<slider_bar
 				 name="SB_Reflection_Distance"
 				 control_name="RenderReflectionProbeDrawDistance"
@@ -949,7 +949,7 @@
 				</check_box>
 			</panel>
 			
-			<!-- FS:WW - Hunk 5: Decreased height of P_Shadow_Res panel from 205 to 185 to adjust layout. -->
+			<!-- FS:WW: Decreased height of P_Shadow_Res panel from 205 to 185 to adjust layout. -->
 			<panel
 			 name="P_Shadow_Res"
 			 follows="top|left"
@@ -1023,7 +1023,7 @@
 					Shd. Res
 				</text>
 				
-				<!-- FS:WW - Hunk 6 & 7: Removed slider_bar.commit_callback and spinner.commit_callback from SB_Shadow_Res and S_Shadow_Res, and increased max_val of S_Shadow_Res spinner to 10. Commit callbacks are now redundant, max_val increase aligns with user needs. -->6777
+				<!-- FS:WW: Removed slider_bar.commit_callback and spinner.commit_callback from SB_Shadow_Res and S_Shadow_Res, and increased max_val of S_Shadow_Res spinner to 10. Commit callbacks are now redundant, max_val increase aligns with user needs. -->6777
 
 				<slider_bar
 				 name="SB_Shadow_Res"
@@ -1249,9 +1249,7 @@
 					 function="ResetControl"
 					 parameter="RenderShadowBlurDistFactor"/>
 				</button>
-				
-				<!-- FS:WW - Hunk 8: Removed entire "FOV Cutoff" section (T_FOV_Cutoff text, SB_FOV_Cutoff slider_bar, S_FOV_Cutoff spinner, FOV_Cutoff_Reset button). This section was deemed unnecessary or redundant for Phototools functionality. -->
-		
+
 				<text
 				 name="T_Spot_Cutoff"
 				 follows="top|left"
@@ -1304,7 +1302,9 @@
 					 function="ResetControl"
 					 parameter="RenderSpotShadowOffset"/>
 				</button>
-								
+				
+				<!-- FS:WW: Removed entire "FOV Cutoff" section (T_FOV_Cutoff text, SB_FOV_Cutoff slider_bar, S_FOV_Cutoff spinner, FOV_Cutoff_Reset button). This section was deemed unnecessary or redundant for Phototools functionality. -->
+				
 				<text
 				 name="T_Shd_Bias"
 				 follows="top|left"
@@ -1407,7 +1407,7 @@
 				</check_box>
 			</panel>
 		
-			<!-- FS:WW - Hunk 9: Increased height of SB_Samples panel from 161 to 201 to accommodate content. -->
+			<!-- FS:WW: Increased height of SB_Samples panel from 161 to 201 to accommodate content. -->
 			<panel
 			 name="SB_Samples"
 			 follows="top|left"
@@ -1467,7 +1467,7 @@
 					 parameter="RenderSSAOSampleCount"/>
 				</button>
 
-				<!-- FS:WW - Hunk 10: Changed increment of SB_Scale slider to 0.01 and decimal_digits of S_Scale spinner to 2 for finer control over SSAO Scale. -->
+				<!-- FS:WW: Changed increment of SB_Scale slider to 0.01 and decimal_digits of S_Scale spinner to 2 for finer control over SSAO Scale. -->
 				<text
 				 name="T_Scale"
 				 follows="top|left"
@@ -2458,7 +2458,7 @@
 				</check_box>
 			</panel>
 
-			<!-- FS:WW - Hunk 11: Increased height of P_Glow_Iterations panel from 103 to 123 to accommodate content. -->
+			<!-- FS:WW: Increased height of P_Glow_Iterations panel from 103 to 123 to accommodate content. -->
 			<panel
 			 name="P_Glow_Iterations"
 			 follows="top|left"
@@ -2705,7 +2705,7 @@
 			 top_pad="1"
 			 left="3"
 			 right="-3"
-			 height="293"
+			 height="313"
 			 border_visible="true"
 			 background_visible="true">
 				<text
@@ -3342,6 +3342,59 @@
 					 function="ResetControl"
 					 parameter="RenderExposure"/>
 				</button>
+				
+								<text
+				 name="T_Animation_Speed"
+				 follows="top|left"
+				 layout="topleft"
+				 left="5"
+				 top_pad="5"
+				 tool_tip="Adjust animation speed factor (1.0 = normal)"
+				 width="70">
+					Animation Speed
+				</text>
+				<slider_bar
+				 name="animationspeed_slider_name"
+				 follows="top|left"
+				 height="16"
+				 increment=".05"
+				 layout="topleft"
+				 left_pad="0"
+				 min_val="0"
+				 max_val="5"
+				 top_delta="-2"
+				 width="127">
+				     <slider_bar.commit_callback
+                      function="Quickprefs.AnimationSpeedChanged"/>
+				</slider_bar>
+				<spinner
+				 name="animationspeed_spinner_name"
+				 top_delta="-3"
+				 label_width="0"
+				 left_pad="0"
+				 decimal_digits="2"
+				 follows="top|left"
+				 max_val="100"
+				 min_val="0"
+				 width="53"
+				 increment=".01">
+				    <spinner.commit_callback
+                       function="Quickprefs.AnimationSpeedChanged"/>
+			    </spinner>
+				<button
+				 follows="left|top"
+				 name="Reset_animation_speed"
+				 height="22"
+				 label="D"
+				 layout="topleft"
+				 left_pad="0"
+				 top_delta="0"
+				 width="20"
+				 tool_tip="Reset to the default value.">
+					<button.commit_callback
+					 function="Quickprefs.ResetAnimationSpeed"/>
+				</button>
+				
 			</panel>
 
 			<panel
@@ -3417,7 +3470,7 @@
 				</check_box>
 			</panel>
 
-			<!-- FS:WW - Hunk 12: Increased height of P_Anti-aliasing panel from 105 to 125 to accommodate content. -->
+			<!-- FS:WW: Increased height of P_Anti-aliasing panel from 105 to 125 to accommodate content. -->
 			<panel
 			 name="P_Anti-aliasing"
 			 follows="top|left"
@@ -3660,7 +3713,7 @@
 				</text>
 			</panel>
 
-			<!-- FS:WW - Hunk 13: Increased height of P_Aids_Settings panel from 282 to 302 to accommodate content. -->																					`1
+			<!-- FS:WW: Increased height of P_Aids_Settings panel from 282 to 302 to accommodate content. -->																					`1
 			<panel
 			 name="P_Aids_Settings"
 			 follows="top|left"
@@ -3907,7 +3960,7 @@
 				</text>
 			</panel>
 			
-			<!-- FS:WW - Hunk 14: Increased height of statistics_scroll scroll_container from 158 to 178 to accommodate content. -->
+			<!-- FS:WW: Increased height of statistics_scroll scroll_container from 158 to 178 to accommodate content. -->
 			<scroll_container
 			 follows="top|left"
 			 height="178"
@@ -4056,7 +4109,7 @@
 				</text>
 			</panel>
 
-			<!-- FS:WW - Hunk 15: Increased height of P_Cam_Settings panel from 131 to 151 to accommodate content. -->
+			<!-- FS:WW: Increased height of P_Cam_Settings panel from 131 to 151 to accommodate content. -->
 			<panel
 			 name="P_Cam_Settings"
 			 follows="top|left"
@@ -4587,7 +4640,7 @@
 				</text>
 			</panel>
 
-			<!-- FS:WW - Hunk 16: Increased height of P_Viewer_Cam_Menu_Settings panel from 131 to 151 to accommodate content. -->
+			<!-- FS:WW: UI for Animation Speed widgets - Controls global animation speed -->
 			<panel
 			 name="P_Viewer_Cam_Menu_Settings"
 			 follows="left|top"

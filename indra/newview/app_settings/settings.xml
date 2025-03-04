@@ -13,6 +13,20 @@
     <key>Value</key>
     <integer>0</integer>
   </map>
+  <!-- <FS:WW> -->
+  <!-- Add FSAnimationTimeFactor for Animation Speed Slider in Gen tab of Phototools-->
+  <key>FSAnimationTimeFactor</key>
+  <map>
+    <key>Comment</key>
+    <string>Controls the animation speed factor. 1.0 is normal speed, 0.0 is frozen, greater than 1.0 is faster, greater then 1.0 but less than 0.0 is slower.</string>
+    <key>Persist</key>
+    <integer>0</integer>  
+    <key>Type</key>
+    <string>F32</string> 
+    <key>Value</key>
+    <real>1.0</real>    
+  </map>
+  <!-- </FS:WW> -->
   <key>FSEnforceStrictObjectCheck</key>
   <map>
     <key>Comment</key>
