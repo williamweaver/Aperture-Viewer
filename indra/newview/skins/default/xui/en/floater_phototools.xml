@@ -2698,6 +2698,7 @@
 				</text>
 			</panel>
 
+			<!-- FS:WW: Decreased height of P_General_Settings panel from 313 to 293 to accommodate content. -->
 			<panel
 			 name="P_General_Settings"
 			 follows="top|left"
@@ -2705,7 +2706,7 @@
 			 top_pad="1"
 			 left="3"
 			 right="-3"
-			 height="313"
+			 height="293"
 			 border_visible="true"
 			 background_visible="true">
 				<text
@@ -2806,6 +2807,7 @@
 					 parameter="IndirectMaxNonImpostors"/>
 				</button>
 
+				<!-- <FS:WW> Removed "Avi Detail" section as it is less relevant with mesh avatars and Avatar Complexity settings are more prominent. This section included T_Avi_Detail text, SB_Avi_Detail slider_bar, S_Avi_Detail spinner, and Reset_Avi_Detail button. 
 				<text
 				 name="T_Avi_Detail"
 				 follows="top|left"
@@ -2854,7 +2856,8 @@
 					 function="ResetControl"
 					 parameter="RenderAvatarLODFactor"/>
 				</button>
-
+				</FS:WW> -->
+				
 				<text
 				 name="T_Avi_Physics"
 				 follows="top|left"
@@ -3397,6 +3400,7 @@
 				
 			</panel>
 
+			<!-- FS:WW: Increased height of P_Render panel from 87 to 107 to accommodate content. -->
 			<panel
 			 name="P_Render"
 			 follows="top|left"
@@ -3404,20 +3408,32 @@
 			 top_pad="1"
 			 left="3"
 			 right="-3"
-			 height="87"
+			 height="104"
 			 border_visible="true"
 			 border_thickness="1"
 			 background_visible="true">
+				<!-- <FS:WW> Add checkbox to toggle fullbright rendering -->
+				<check_box
+				 follows="left|top"
+				 control_name="FSRenderEnableFullbright"
+				 height="16"
+				 label="Enable Fullbright Textures"
+				 layout="topleft"
+				 top_pad="5" 
+				 left="3"
+				 name="EnableFullbright"
+				 tool_tip="Enable/disable fullbright effect"
+				 width="240"/>
 				<check_box
 				 follows="left|top"
 				 control_name="RenderUseFarClip"
 				 height="16"
 				 label="Enable Draw Distance"
 				 layout="topleft"
-				 top_pad="5" 
 				 left="3"
 				 name="UseFarClip"
 				 tool_tip="Enables the draw distance limit, restricting how far the viewer will render objects based on the set draw distance. Disabling this will cause the viewer to render objects beyond the defined distance, which can significantly decrease performance in large, detailed environments."
+				 top_pad="0"
 				 width="240"/>
 				<check_box
 				 follows="left|top"
@@ -3478,7 +3494,7 @@
 			 top_pad="1"
 			 left="3"
 			 right="-3"
-			 height="125"
+			 height="108"
 			 border_visible="true"
 			 border_thickness="1"
 			 background_visible="true">
@@ -3963,7 +3979,7 @@
 			<!-- FS:WW: Increased height of statistics_scroll scroll_container from 158 to 178 to accommodate content. -->
 			<scroll_container
 			 follows="top|left"
-			 height="178"
+			 height="179"
 			 layout="topleft"
 			 left="3"
 			 name="statistics_scroll"
