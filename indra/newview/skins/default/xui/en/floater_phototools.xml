@@ -3354,7 +3354,7 @@
 				 top_pad="5"
 				 tool_tip="Adjust animation speed factor (1.0 = normal)"
 				 width="70">
-					Animation Speed
+					Anim Speed
 				</text>
 				<slider_bar
 				 name="animationspeed_slider_name"
