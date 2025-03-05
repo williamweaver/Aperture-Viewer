@@ -202,7 +202,7 @@ F32 LLPipeline::RenderShadowBlurSize;
 F32 LLPipeline::RenderSSAOScale;
 U32 LLPipeline::RenderSSAOMaxScale;
 F32 LLPipeline::RenderSSAOFactor;
-F32 LLPipeline::RenderSSAOSampleCount; // <FS:WW> Default SSAO sample count
+F32 LLPipeline::FSRenderSSAOSampleCount; // <FS:WW> Default SSAO sample count
 LLVector3 LLPipeline::RenderSSAOEffect;
 F32 LLPipeline::RenderShadowOffsetError;
 F32 LLPipeline::RenderShadowBiasError;
@@ -621,7 +621,7 @@ void LLPipeline::init()
     connectRefreshCachedSettingsSafe("RenderSSAOMaxScale");
     connectRefreshCachedSettingsSafe("RenderSSAOFactor");
     connectRefreshCachedSettingsSafe("RenderSSAOEffect");
-	connectRefreshCachedSettingsSafe("RenderSSAOSampleCount");
+	connectRefreshCachedSettingsSafe("FSRenderSSAOSampleCount");
     connectRefreshCachedSettingsSafe("RenderShadowOffsetError");
     connectRefreshCachedSettingsSafe("RenderShadowBiasError");
     connectRefreshCachedSettingsSafe("RenderShadowOffset");
@@ -1219,7 +1219,7 @@ void LLPipeline::refreshCachedSettings()
     RenderSSAOMaxScale = gSavedSettings.getU32("RenderSSAOMaxScale");
     RenderSSAOFactor = gSavedSettings.getF32("RenderSSAOFactor");
     RenderSSAOEffect = gSavedSettings.getVector3("RenderSSAOEffect");
-    RenderSSAOSampleCount = gSavedSettings.getF32("RenderSSAOSampleCount"); // <FS:WWeaver> Load SSAO sample count setting from gSavedSettings
+    FSRenderSSAOSampleCount = gSavedSettings.getF32("FSRenderSSAOSampleCount"); // <FS:WWeaver> Load SSAO sample count setting from gSavedSettings
     RenderShadowOffsetError = gSavedSettings.getF32("RenderShadowOffsetError");
     RenderShadowBiasError = gSavedSettings.getF32("RenderShadowBiasError");
     RenderShadowOffset = gSavedSettings.getF32("RenderShadowOffset");
@@ -8757,7 +8757,7 @@ void LLPipeline::bindDeferredShader(LLGLSLShader& shader, LLRenderTarget* light_
     shader.uniform1f(LLShaderMgr::DEFERRED_SSAO_FACTOR, ssao_factor);
     shader.uniform1f(LLShaderMgr::DEFERRED_SSAO_FACTOR_INV, 1.0f/ssao_factor);
     
-	shader.uniform1f(LLShaderMgr::DEFERRED_SSAO_SAMPLE_COUNT, RenderSSAOSampleCount); // <FS:WWeaver> Set SSAO sample count uniform
+	shader.uniform1f(LLShaderMgr::DEFERRED_SSAO_SAMPLE_COUNT, FSRenderSSAOSampleCount); // <FS:WWeaver> Set SSAO sample count uniform
     
 	LLVector3 ssao_effect = RenderSSAOEffect;
     F32 matrix_diag = (ssao_effect[0] + 2.0f*ssao_effect[1])/3.0f;

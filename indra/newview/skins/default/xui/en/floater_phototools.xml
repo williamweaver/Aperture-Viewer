@@ -1430,7 +1430,7 @@
 				</text>
 				<slider_bar
 				 name="SB_Samples"
-				 control_name="RenderSSAOSampleCount"
+				 control_name="FSRenderSSAOSampleCount"
 				 follows="left|right"
 				 height="16"
 				 increment="1"
@@ -1442,7 +1442,7 @@
 				 width="127"/>
 				<spinner
 				 name="S_Samples"
-				 control_name="RenderSSAOSampleCount"
+				 control_name="FSRenderSSAOSampleCount"
 				 top_delta="-3"
 				 label_width="0"
 				 left_pad="0"
@@ -1464,7 +1464,7 @@
 				 tool_tip="Reset to the default value.">
 					<button.commit_callback
 					 function="ResetControl"
-					 parameter="RenderSSAOSampleCount"/>
+					 parameter="FSRenderSSAOSampleCount"/>
 				</button>
 
 				<!-- FS:WW: Changed increment of SB_Scale slider to 0.01 and decimal_digits of S_Scale spinner to 2 for finer control over SSAO Scale. -->

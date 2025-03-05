@@ -10946,7 +10946,7 @@ Change of this parameter will affect the layout of buttons in notification toast
     <key>Backup</key>
     <integer>0</integer>
   </map>
-  <key>RenderSSAOSampleCount</key>  
+  <key>FSRenderSSAOSampleCount</key>  
   <map>                                 
     <key>Comment</key>             
     <string>Controls the number of samples used for Screen Space Ambient Occlusion (SSAO). Higher values improve quality but reduce performance.</string> 
@@ -22780,17 +22780,17 @@ Change of this parameter will affect the layout of buttons in notification toast
       <integer>0</integer>
     </map>
 <!-- <FS:WW> Setting to enable or disable fullbright rendering-->
-  <key>FSRenderEnableFullbright</key>
-  <map>
-    <key>Comment</key>
-    <string>Enable Fullbright Rendering</string>
-    <key>Persist</key>
-    <integer>0</integer>
-    <key>Type</key>
-    <string>Boolean</string>
-    <key>Value</key>
-    <real>1</real>
-  </map>
+    <key>FSRenderEnableFullbright</key>
+    <map>
+      <key>Comment</key>
+      <string>Enable Fullbright Rendering</string>
+      <key>Persist</key>
+      <integer>0</integer>
+      <key>Type</key>
+      <string>Boolean</string>
+      <key>Value</key>
+      <real>1</real>
+    </map>
 <!-- </FS:WW> -->
     <key>FSRenderFarClipStepping</key>
     <map>
