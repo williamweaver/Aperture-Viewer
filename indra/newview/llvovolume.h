@@ -56,7 +56,8 @@ enum LLVolumeInterfaceType
 
 // <FS:Ansariel> Increase to allow temporary LOD factor of 8
 //const F32 MAX_LOD_FACTOR = 4.0f;
-const F32 MAX_LOD_FACTOR = 8.0f;
+// <FS:WW> Increased MAX_LOD_FACTOR to 16.0f to allow for higher volume detail.
+const F32 MAX_LOD_FACTOR = 16.0f;
 
 
 class LLRiggedVolume : public LLVolume
