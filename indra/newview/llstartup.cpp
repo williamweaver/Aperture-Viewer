@@ -1678,7 +1678,7 @@ bool idle_startup()
         login->setLastExecDuration(gLastExecDuration);
         login->setLastExecEvent(last_exec_event);
 // </AW: crash report grid correctness>
-
+        login->setLastAgentSessionId(gLastAgentSessionId);
 
         // This call to LLLoginInstance::connect() starts the
         // authentication process.
@@ -2086,7 +2086,7 @@ bool idle_startup()
         }
         else if (regionp->capabilitiesError())
         {
-            LL_WARNS("AppInit") << "Failed to get capabilities. Backing up to login screen!" << LL_ENDL;
+            LL_WARNS("AppInit") << "Failed to get capabilities. Logging out and backing up to login screen!" << LL_ENDL;
             if (gRememberPassword)
             {
                 LLNotificationsUtil::add("LoginPacketNeverReceived", LLSD(), LLSD(), login_alert_status);
@@ -2095,6 +2095,15 @@ bool idle_startup()
             {
                 LLNotificationsUtil::add("LoginPacketNeverReceivedNoTP", LLSD(), LLSD(), login_alert_status);
             }
+
+            // Session was created, don't just hang up on server, send a logout request
+            LLMessageSystem* msg = gMessageSystem;
+            msg->newMessageFast(_PREHASH_LogoutRequest);
+            msg->nextBlockFast(_PREHASH_AgentData);
+            msg->addUUIDFast(_PREHASH_AgentID, gAgent.getID());
+            msg->addUUIDFast(_PREHASH_SessionID, gAgent.getSessionID());
+            gAgent.sendReliableMessage();
+
             reset_login();
         }
         else
@@ -2102,7 +2111,7 @@ bool idle_startup()
             U32 num_retries = regionp->getNumSeedCapRetries();
             if (num_retries > MAX_SEED_CAP_ATTEMPTS_BEFORE_ABORT)
             {
-                LL_WARNS("AppInit") << "Failed to get capabilities. Backing up to login screen!" << LL_ENDL;
+                LL_WARNS("AppInit") << "Failed to get capabilities. Logging out and backing up to login screen!" << LL_ENDL;
                 if (gRememberPassword)
                 {
                     LLNotificationsUtil::add("LoginPacketNeverReceived", LLSD(), LLSD(), login_alert_status);
@@ -2111,6 +2120,15 @@ bool idle_startup()
                 {
                     LLNotificationsUtil::add("LoginPacketNeverReceivedNoTP", LLSD(), LLSD(), login_alert_status);
                 }
+
+                // Session was created, don't just hang up on server, send a logout request
+                LLMessageSystem* msg = gMessageSystem;
+                msg->newMessageFast(_PREHASH_LogoutRequest);
+                msg->nextBlockFast(_PREHASH_AgentData);
+                msg->addUUIDFast(_PREHASH_AgentID, gAgent.getID());
+                msg->addUUIDFast(_PREHASH_SessionID, gAgent.getSessionID());
+                gAgent.sendReliableMessage();
+
                 reset_login();
             }
             else if (num_retries > 0)
@@ -2204,7 +2222,7 @@ bool idle_startup()
         // by the voice's events
         // <FS:Ansariel> [FS communication UI]
         //LLFloaterIMContainer *im_inst = LLFloaterIMContainer::getInstance();
-        //if(gAgent.isFirstLogin())
+        //if(gAgent.isFirstLogin() && im_inst)
         //{
         //    im_inst->openFloater(im_inst->getKey());
         //}
@@ -2476,7 +2494,7 @@ bool idle_startup()
 
         if (!gAgentMovementCompleted && timeout.getElapsedTimeF32() > STATE_AGENT_WAIT_TIMEOUT)
         {
-            LL_WARNS("AppInit") << "Backing up to login screen!" << LL_ENDL;
+            LL_WARNS("AppInit") << "Timeout on agent movement. Sending logout and backing up to login screen!" << LL_ENDL;
             if (gRememberPassword)
             {
                 LLNotificationsUtil::add("LoginPacketNeverReceived", LLSD(), LLSD(), login_alert_status);
@@ -2485,6 +2503,15 @@ bool idle_startup()
             {
                 LLNotificationsUtil::add("LoginPacketNeverReceivedNoTP", LLSD(), LLSD(), login_alert_status);
             }
+
+            // Session was created, don't just hang up on server, send a logout request
+            LLMessageSystem* msg = gMessageSystem;
+            msg->newMessageFast(_PREHASH_LogoutRequest);
+            msg->nextBlockFast(_PREHASH_AgentData);
+            msg->addUUIDFast(_PREHASH_AgentID, gAgent.getID());
+            msg->addUUIDFast(_PREHASH_SessionID, gAgent.getSessionID());
+            gAgent.sendReliableMessage();
+
             reset_login();
         }
         return false;
@@ -4556,6 +4583,7 @@ bool process_login_success_response(U32 &first_sim_size_x, U32 &first_sim_size_y
     text = response["session_id"].asString();
     if(!text.empty()) gAgentSessionID.set(text);
 //  gDebugInfo["SessionID"] = text;
+    LLAppViewer::instance()->recordSessionToMarker();
 
     // Session id needed for parcel info request in LLUrlEntryParcel
     // to resolve parcel name.
