@@ -6,7 +6,7 @@
   name="panel_login"
   focus_root="true"
   background_visible="true"
-  bg_opaque_color="0.16 0.16 0.16 1"
+  bg_opaque_color="0.051 0.051 0.051 1"
   background_opaque="true"
   width="1024">
   <panel.string
@@ -154,7 +154,7 @@
             follows="left|top"
             font="SansSerifLarge"
             font.style="BOLD"
-            text_color="EmphasisColor"
+            text_color="EmphasisColor_Text1"
             height="34"
             name="sign_up_text"
             left_pad="10"
@@ -191,7 +191,7 @@
           <text
             follows="left|top"
             font="SansSerifLarge"
-            text_color="EmphasisColor"
+            text_color="EmphasisColor_Text1"
             height="16"
             name="forgot_password_text"
             left="492"

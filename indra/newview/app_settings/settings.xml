@@ -928,7 +928,7 @@
       <key>Type</key>
       <string>String</string>
       <key>Value</key>
-      <string>grey</string>
+      <string>dusk</string>
     </map>
 
     <key>ShowSearchTopBar</key>
@@ -14887,7 +14887,7 @@ Change of this parameter will affect the layout of buttons in notification toast
       <key>Type</key>
       <string>String</string>
       <key>Value</key>
-      <string>firestorm</string>
+      <string>aperture</string>
     </map>
     <key>SkinningSettingsFile</key>
     <map>
@@ -21419,7 +21419,7 @@ Change of this parameter will affect the layout of buttons in notification toast
       <key>Type</key>
       <string>String</string>
       <key>Value</key>
-      <string>Firestorm</string>
+      <string>Aperture</string>
     </map>
   <key>FSSkinCurrentThemeReadableName</key>
     <map>
@@ -21432,7 +21432,7 @@ Change of this parameter will affect the layout of buttons in notification toast
       <key>Type</key>
       <string>String</string>
       <key>Value</key>
-      <string>Grey</string>
+      <string>dusk</string>
     </map>
     <key>FSStatusbarShowSimulatorVersion</key>
     <map>

@@ -7,7 +7,7 @@
     name="panel_login"
     focus_root="true" 
     background_visible="true"
-    bg_opaque_color="0.16 0.16 0.16 1"
+    bg_opaque_color="0.051 0.051 0.051 1"
     background_opaque="true"
     width="1024">
   <panel.string
@@ -182,7 +182,7 @@
       <text
         follows="left|top|right"
         font="SansSerifMedium"
-        text_color="EmphasisColor"
+        text_color="EmphasisColor_Text1"
         top="10"
         height="16"
         name="grid_builder_text"
@@ -227,7 +227,7 @@
       <text
           follows="left|bottom"
           font="SansSerifSmall"
-          text_color="EmphasisColor"
+          text_color="EmphasisColor_Text1"
           left="10"
           height="16"
           name="create_new_account_text"
@@ -238,7 +238,7 @@
       <text
           follows="left|bottom"
           font="SansSerifSmall"
-          text_color="EmphasisColor"
+          text_color="EmphasisColor_Text1"
           height="16"
           name="forgot_password_text"
           top="26"
