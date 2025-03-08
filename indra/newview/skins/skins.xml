@@ -1,5 +1,41 @@
 <llsd>
   <array>
+  
+  <map>
+      <key>name</key>
+      <string>Aperture</string>
+      <key>folder</key>
+      <string>aperture</string>
+      <key>themes</key>
+  	
+	  <array>
+        <map>
+          <key>name</key>
+          <string>Nocturn</string>
+          <key>folder</key>
+          <string/>
+        </map>
+        <map>
+          <key>name</key>
+          <string>Phantom</string>
+          <key>folder</key>
+          <string>phantom</string>
+        </map>
+		<map>
+          <key>name</key>
+          <string>Umbra</string>
+          <key>folder</key>
+          <string>umbra</string>
+		</map>
+		<map>
+          <key>name</key>
+          <string>Dusk</string>
+          <key>folder</key>
+          <string>dusk</string>
+		</map>
+	  </array>
+	</map>
+  
     <map>
       <key>name</key>
       <string>AnsaStorm</string>

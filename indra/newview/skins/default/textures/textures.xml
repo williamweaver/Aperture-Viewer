@@ -878,6 +878,10 @@ with the same filename but different name
   <texture name="beacons" file_name="toolbar_icons/beacons.png" preload="true" />
   <texture name="Stop_Animations_Icon" file_name="toolbar_icons/stop_animations.png" preload="true" />
 
+  <texture name="skin aperture nocturn" file_name="skinspreview/aperture_nocturn.jpg" preload="true" />
+  <texture name="skin aperture umbra" file_name="skinspreview/aperture_umbra.jpg" preload="true" />
+  <texture name="skin aperture phantom" file_name="skinspreview/aperture_phantom.jpg" preload="true" />
+  <texture name="skin aperture dusk" file_name="skinspreview/aperture_dusk.jpg" preload="true" />
   <texture name="skin ansastorm blood" file_name="skinspreview/ansa_blood.jpg" preload="true" />
   <texture name="skin ansastorm bright blue" file_name="skinspreview/ansa_blue.jpg" preload="true" />
   <texture name="skin ansastorm classic brown" file_name="skinspreview/ansa_brown.jpg" preload="true" />

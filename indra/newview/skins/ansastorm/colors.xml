@@ -21,25 +21,28 @@
 	 value="0.75 0.92 0.49 1.0" />
 	<color
 	 name="EmphasisColor"
-	 value="0 0.6211 0.8477 1" />
+	 value="0.1686 0.0431 0.3490 1" />
 	<color
 	 name="EmphasisColorLight"             
 	 value="0 0.8211 1 1.0" />
 	<color
 	 name="SchemeLightest"
-	 value="0 0.6211 0.8477 1.0" />
+	 value="0.1686 0.0431 0.3490 1.0" />
 	<color
 	 name="SchemeLightest_35"
-	 value="0 0.6211 0.8477 0.35" />
+	 value="0.1686 0.0431 0.3490 0.35" />
 	<color 
 	 name="SchemeDark"
 	 value="0.49 0.33 0.25 1.0" />
 	<color
 	 name="EmphasisColor_13"
-	 value="0 0.6211 0.8477 0.13" />
+	 value="0.1686 0.0431 0.3490 0.13" />
 	<color
 	 name="EmphasisColor_35"
-	 value="0 0.6211 0.8477 0.35" />
+	 value="0.1686 0.0431 0.3490 0.35" />
+	<color
+	 name="EmphasisColor_Text1"
+	 value="0.6078 0.3961 0.7490 1" />	 
 	<color
 	 name="BeaconColor"
     value="0.749 0.298 0 1" />	 
@@ -271,23 +274,23 @@
 
 	<color
 	 name="AnsaStormBlue_Dk"
-	 value="0 0.6211 0.8477 1" />
+	 value="0.1686 0.0431 0.3490 1" />
 
 	<color
 	 name="AnsaStormBlue_Dk_86"
-	 value="0 0.6211 0.8477 0.86" />
+	 value="0.1686 0.0431 0.3490 0.86" />
 
 	 <color
 	 name="AnsaStormBlue_Dk_66"
-	 value="0 0.6211 0.8477 0.66" />
+	 value="0.1686 0.0431 0.3490 0.66" />
 
 	 <color
 	 name="AnsaStormBlue_Dk_33"
-	 value="0 0.6211 0.8477 0.33" />
+	 value="0.1686 0.0431 0.3490 0.33" />
 
 	 <color
 	 name="AnsaStormBlue_Dk_13"
-	 value="0 0.6211 0.8477 0.13" />
+	 value="0.1686 0.0431 0.3490 0.13" />
 
 	 <color
 	 name="AnsaStormBlue_Lt_13"
@@ -663,7 +666,7 @@
      reference="Black" />
     <color
      name="FilterTextColor"
-     reference="EmphasisColor" />
+     reference="EmphasisColor_Text2" />
      <color
      name="FloaterButtonImageColor"
      reference="LtGray" />
@@ -686,7 +689,7 @@
      reference="EmphasisColor" />
     <color
      name="FolderViewLoadingMessageTextColor"
-     reference="EmphasisColor" />
+     reference="EmphasisColor_Text2" />
     <color
      name="GridFocusPointColor"
      reference="White_50" />
@@ -1084,7 +1087,7 @@
      reference="Black" />
     <color
      name="SelectedOutfitTextColor"
-     reference="EmphasisColor" />
+     reference="EmphasisColor_Text2" />
 <!-- Color Changed -->
     <color
      name="SilhouetteChildColor"
